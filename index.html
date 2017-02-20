@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>ValentinCard</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body id="fullpage">
+	<section class="parallax section">
+		<ul id="scene">
+			<li class="layer" data-depth="0.60"><img src="img/fat_heart.svg" class="fat_heart wow animated fadeInUp" alt="Un coeur bien FAT"></li>
+			<li class="layer" data-depth="0.70"><img src="img/medium_heart_white.svg" class="medium_heart_white wow animated fadeInUp" alt="Un peut plus gros que la normal"></li>
+			<li class="layer" data-depth="0.90"><img src="img/small_heart_white.svg" class="small_heart_white wow animated fadeInUp" alt="Des coeurs tous petit !"></li>
+			<li class="layer" data-depth="1.40"><img src="img/black_red_heart.svg" class="black_red_heart wow animated fadeInUp" alt="Des coeurs rouge foncé couleurs sang"></li>
+			<li class="layer" data-depth="1.00"><img src="img/couple.svg" class="couple wow animated fadeInUp" alt="Couple d'amoureux en montgolfière"></li>
+			<li class="layer" data-depth="1.20"><img src="img/red_heart.svg" class="red_heart wow animated fadeInUp" alt="Les coeurs rouge classic"></li>
+			<li class="layer" data-depth="1.50"><img src="img/text.png" class="text wow animated fadeInUp" alt="Valentine Day's"></li>
+		</ul>
+	</section>
+	<section class="section" ng-controller="contentCtrl">
+		<div class="container" ng-view >
+			<div class="left">
+				<img ng-src="img/{{ data.img1 }}" id="img1" alt="Couple2" class="wow animated tada">
+				<h2 class="wow animated fadeInLeft" id="subtitle" contenteditable="true">{{ data.subtitle }}</h2>
+				<p class="wow animated rubberBand" id="describ_title" contenteditable="true">{{ data.describ_title }}</p>
+			</div>
+			<div class="right">
+				<h2 class="wow animated fadeInRight" id="title" contenteditable="true">{{ data.title }}</h2>
+				<p class="wow animated wobble" id="subtitle_title" contenteditable="true">{{ data.subtitle_title }}</p>
+				<img ng-src="img/{{ data.img2 }}" id="img2" alt="Couple3" class="wow animated jello">
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<h2 class="hidden">Uploads d'images</h2>
+		<form method="POST" action="upload.php" id="form" enctype="multipart/form-data">
+			<input type="file" name="file1" id="file1">
+			<input type="file" name="file2" id="file2">
+			<input type="submit" name="submit">
+		</form>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/onepagescroll.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var wow = new WOW();
+			wow.init();
+		});
+	</script>
+
+</body>
+</html>

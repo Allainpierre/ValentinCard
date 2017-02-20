@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+/* line 5, ../sass/app.scss */
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #F4F0E0;
+  height: auto !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 12, ../sass/app.scss */
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 1170px) {
+  /* line 16, ../sass/app.scss */
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+  /* line 19, ../sass/app.scss */
+  section .left {
+    width: 50%;
+    float: left;
+    margin-top: 100px;
+  }
+  /* line 23, ../sass/app.scss */
+  section .left img {
+    width: 90%;
+  }
+  /* line 26, ../sass/app.scss */
+  section .left h2 {
+    margin-top: 50px;
+  }
+  /* line 29, ../sass/app.scss */
+  section .left p, section .left h2 {
+    text-align: right;
+  }
+  /* line 33, ../sass/app.scss */
+  section .right {
+    margin-top: 100px;
+    width: 50%;
+    float: right;
+  }
+  /* line 37, ../sass/app.scss */
+  section .right img {
+    width: 90%;
+    margin-top: 100px;
+    float: right;
+  }
+  /* line 42, ../sass/app.scss */
+  section .right h2 {
+    margin-top: 50px;
+  }
+  /* line 46, ../sass/app.scss */
+  section h2 {
+    color: #d4325e;
+  }
+  /* line 49, ../sass/app.scss */
+  section p {
+    color: #3C3C3C;
+    margin-bottom: 150px;
+  }
+
+  /* line 54, ../sass/app.scss */
+  .fp-tableCell {
+    display: table !important;
+  }
+
+  /* line 57, ../sass/app.scss */
+  .container {
+    width: 1170px;
+    display: block;
+    margin: auto;
+  }
+
+  /* line 62, ../sass/app.scss */
+  .parallax {
+    background-color: #F4F0E0;
+    /* margin-top: 50px; */
+  }
+  /* line 65, ../sass/app.scss */
+  .parallax ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 600px;
+    height: 600px;
+    top: 150px;
+    margin: auto;
+    display: block;
+  }
+  /* line 75, ../sass/app.scss */
+  .parallax ul li .couple {
+    width: 300px;
+    padding-left: 150px;
+  }
+  /* line 79, ../sass/app.scss */
+  .parallax ul li .fat_heart {
+    width: 300px;
+    padding-left: 150px;
+    padding-top: 200px;
+  }
+  /* line 84, ../sass/app.scss */
+  .parallax ul li .medium_heart_white {
+    width: 700px;
+  }
+  /* line 87, ../sass/app.scss */
+  .parallax ul li .small_heart_white {
+    width: 650px;
+  }
+  /* line 90, ../sass/app.scss */
+  .parallax ul li .black_red_heart {
+    width: 650px;
+  }
+  /* line 93, ../sass/app.scss */
+  .parallax ul li .red_heart {
+    width: 650px;
+  }
+  /* line 96, ../sass/app.scss */
+  .parallax ul li .text {
+    width: 500px;
+    padding-top: 550px;
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  /* line 108, ../sass/app.scss */
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+  /* line 111, ../sass/app.scss */
+  section p, section h2 {
+    text-align: center;
+  }
+  /* line 114, ../sass/app.scss */
+  section .left {
+    width: 100%;
+    margin-top: 70px;
+  }
+  /* line 117, ../sass/app.scss */
+  section .left img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  /* line 122, ../sass/app.scss */
+  section .right {
+    margin-top: 100px;
+    width: 100%;
+    float: right;
+  }
+  /* line 126, ../sass/app.scss */
+  section .right img {
+    width: 100%;
+    margin-top: 100px;
+    float: right;
+  }
+  /* line 131, ../sass/app.scss */
+  section .right h2 {
+    margin-top: 50px;
+  }
+  /* line 135, ../sass/app.scss */
+  section h2 {
+    color: #d4325e;
+  }
+  /* line 138, ../sass/app.scss */
+  section p {
+    color: #3C3C3C;
+  }
+
+  /* line 142, ../sass/app.scss */
+  .container {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  /* line 147, ../sass/app.scss */
+  .parallax {
+    background-color: #F4F0E0;
+  }
+  /* line 150, ../sass/app.scss */
+  .parallax ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  /* line 158, ../sass/app.scss */
+  .parallax ul li .couple {
+    width: 100%;
+    height: 500px;
+    padding-left: 100px;
+  }
+  /* line 163, ../sass/app.scss */
+  .parallax ul li .fat_heart {
+    width: 40%;
+    margin-top: 60%;
+    padding-left: 90px;
+  }
+  /* line 168, ../sass/app.scss */
+  .parallax ul li .medium_heart_white, .parallax ul li .small_heart_white, .parallax ul li .black_red_heart, .parallax ul li .red_heart {
+    width: 150%;
+    margin-top: 80%;
+    margin-left: 25%;
+  }
+  /* line 173, ../sass/app.scss */
+  .parallax ul li .text {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 550px;
+  }
+}
+/* du texte s├®lectionn├® sera jaune sur fond rouge */
+/* line 186, ../sass/app.scss */
+::-moz-selection {
+  background: #d4325e;
+  color: #fff;
+}
+
+/* line 191, ../sass/app.scss */
+::selection {
+  background: #d4325e;
+  color: #fff;
+}
